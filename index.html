@@ -1,259 +1,292 @@
 <html lang="ja"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>放課後等デイサービス TSUMUGI | 神戸市西区伊川谷</title>
+    <title>エムコン (m2-construction) | 神戸市西区の街の電気屋さん</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&amp;family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&amp;family=M+PLUS+Rounded+1c:wght@400;700&amp;display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Noto Sans JP', sans-serif;
-            color: #4A4A4A;
-        }
-        .font-kiwi {
-            font-family: 'Kiwi Maru', serif;
-        }
-        .bg-pastel-yellow { background-color: #FFF9E6; }
-        .bg-pastel-green { background-color: #E6F4EA; }
-        .bg-pastel-orange { background-color: #FFF0E6; }
-        .text-tsumugi-orange { color: #E67E22; }
-        .bg-tsumugi-orange { background-color: #E67E22; }
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        .font-rounded { font-family: 'M PLUS Rounded 1c', sans-serif; }
+        .bg-warm-gradient { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); }
+        .accent-border { border-bottom: 4px solid #fcd34d; }
+        .card-hover { transition: transform 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); }
     </style>
 </head>
-<body class="bg-white">
+<body class="bg-slate-50 text-slate-700">
 
     <!-- Header -->
     <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-tsumugi-orange rounded-full flex items-center justify-center text-white font-bold text-xl">紬</div>
-                <div>
-                    <h1 class="text-xl font-bold leading-none text-tsumugi-orange">TSUMUGI</h1>
-                    <p class="text-[10px] text-gray-500">放課後等デイサービス ツムギ</p>
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <div class="flex flex-col">
+                <div class="text-xl md:text-2xl font-bold text-blue-600 font-rounded flex items-center">
+                    <span class="mr-2 text-3xl">🔌</span>エムコン
                 </div>
+                <span class="text-[10px] text-slate-400 font-medium">m2-construction / 神戸市西区</span>
             </div>
-            <nav class="hidden md:flex gap-8 font-medium text-gray-600">
-                <a href="#about" class="hover:text-tsumugi-orange transition">私たちの想い</a>
-                <a href="#service" class="hover:text-tsumugi-orange transition">サービス内容</a>
-                <a href="#schedule" class="hover:text-tsumugi-orange transition">一日の流れ</a>
-                <a href="#access" class="hover:text-tsumugi-orange transition">アクセス</a>
-            </nav>
-            <a href="#contact" class="bg-tsumugi-orange text-white px-6 py-2 rounded-full font-bold hover:bg-orange-600 transition shadow-md">
-                お問い合わせ
-            </a>
+            
+            <div class="hidden lg:flex items-center space-x-6">
+                <div class="text-right">
+                    <p class="text-[10px] text-slate-500 font-bold">お電話でのご相談はこちら</p>
+                    <p class="text-xl font-bold text-orange-500">090-7364-4824</p>
+                </div>
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-2 rounded-full font-bold transition shadow-md flex items-center">
+                    <span class="mr-2">✉</span> お問い合わせ
+                </a>
+            </div>
+            <button class="lg:hidden text-2xl text-blue-600">☰</button>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative pt-24 pb-16 md:pt-40 md:pb-32 overflow-hidden">
-        <div class="absolute top-0 right-0 -z-10 w-2/3 h-full bg-pastel-yellow rounded-bl-[100px]"></div>
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <span class="inline-block bg-white text-tsumugi-orange px-4 py-1 rounded-full text-sm font-bold mb-4 shadow-sm">神戸市西区伊川谷の放課後デイ</span>
-                <h2 class="text-4xl md:text-5xl font-kiwi font-bold leading-tight mb-6">
-                    ひとりひとりの<br>
-                    <span class="text-tsumugi-orange">「個性」</span>を紡ぎ、<br>
-                    未来へつなげる。
-                </h2>
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                    TSUMUGIは、お子様が自分らしく輝ける場所です。<br>
-                    遊びと学びを通じて、社会の中で生きる力をゆっくり、<br>
-                    そして大切に育んでいきます。
-                </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#contact" class="bg-tsumugi-orange text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:translate-y-1 transition block text-center">
-                        見学・体験のお申し込み
-                    </a>
+    <section class="relative pt-24 pb-12 md:pt-32 md:pb-24 bg-warm-gradient overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <span class="inline-block bg-orange-100 text-orange-600 px-4 py-1 rounded-full text-sm font-bold mb-4">神戸市西区・地域密着の電気工事店</span>
+                    <h1 class="text-3xl md:text-5xl font-bold text-slate-800 font-rounded leading-tight mb-6">
+                        お家の電気の「困った！」を<br>
+                        <span class="text-blue-600 underline decoration-yellow-400 decoration-4">笑顔で解決いたします。</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        エアコン、コンセント、アンテナのことならエムコンへ。<br class="hidden md:block">
+                        宮内が丁寧・親身にお伺いします。見積もりだけでもお気軽に！
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="tel:090-7364-4824" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition flex items-center">
+                            <span class="mr-2 text-2xl">📞</span> 今すぐ電話で相談
+                        </a>
+                        <a href="#services" class="bg-white border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition">
+                            業務内容を見る
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://tanoshige.v2001.coreserver.jp/ai-web-studio/backups/project_ai-web-studio-backups/assets/ai_img_20260304_162119_b7a1.png" data-ai-prompt="玄関先で笑顔で挨拶する、清潔感のあるポロシャツを着た若い電気工事士の男性。背景は明るい日本の住宅街。親しみやすく信頼できる雰囲気。" class="w-full h-auto" data-ai-last-sync="玄関先で笑顔で挨拶する、清潔感のあるポロシャツを着た若い電気工事士の男性。背景は明るい日本の住宅街。親しみやすく信頼できる雰囲気。, featuring Japanese people and models, natural Japanese physical features and hair">
+                    </div>
+                    <!-- Badge -->
+                    <div class="absolute -bottom-6 -left-6 bg-yellow-400 text-slate-800 p-6 rounded-2xl shadow-xl rotate-3 hidden md:block">
+                        <p class="font-bold text-xl leading-tight">見積もり無料！<br><span class="text-sm">お気軽にお電話ください</span></p>
+                    </div>
                 </div>
             </div>
-            <div class="md:w-1/2 relative">
-                <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl rotate-2">
-                    <img src="https://tanoshige.v2001.coreserver.jp/ai-web-studio/backups/project_ai-web-studio-backups/assets/ai_img_20260301_125104_9422.png" data-ai-prompt="明るい日差しが入る療育施設で、笑顔で積み木や工作を楽しむ子供たちと、優しく見守る保育スタッフの心温まる写真。パステルカラーの柔らかい雰囲気。" class="w-full h-auto" data-ai-last-sync="明るい日差しが入る療育施設で、笑顔で積み木や工作を楽しむ子供たちと、優しく見守る保育スタッフの心温まる写真。パステルカラーの柔らかい雰囲気。, featuring Japanese people and models, natural Japanese physical features and appearance">
+        </div>
+        <!-- Decoration circles -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-blue-100 rounded-full opacity-50"></div>
+        <div class="absolute bottom-0 left-0 ml-10 mb-10 w-32 h-32 bg-yellow-100 rounded-full opacity-50"></div>
+    </section>
+
+    <!-- Why Us Section (Commitment) -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl mb-4">🏠</div>
+                    <h3 class="font-bold text-xl mb-2 font-rounded">地域密着の安心感</h3>
+                    <p class="text-sm text-slate-500">神戸市西区を中心に活動。地元の皆様に愛される丁寧な仕事を約束します。</p>
                 </div>
-                <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-pastel-green rounded-full -z-10 animate-pulse"></div>
+                <div class="p-6">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h3 class="font-bold text-xl mb-2 font-rounded">親身なヒアリング</h3>
+                    <p class="text-sm text-slate-500">代表の宮内が直接お話を伺います。難しい専門用語を使わず丁寧にご説明します。</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="font-bold text-xl mb-2 font-rounded">迅速・丁寧な施工</h3>
+                    <p class="text-sm text-slate-500">電気のトラブルは待ったなし。確かな技術で、素早く安全に解決いたします。</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-50 scroll-mt">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h3 class="text-3xl font-kiwi font-bold mb-4">TSUMUGIの想い</h3>
-                <div class="w-20 h-1 bg-tsumugi-orange mx-auto rounded-full"></div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 font-rounded">こんなことができます！</h2>
+                <div class="w-24 h-1.5 bg-yellow-400 mx-auto mb-6 rounded-full"></div>
+                <p class="text-slate-600">お家の「困った」に合わせて、プロの技術でお応えします。</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-3xl bg-pastel-orange text-center">
-                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm text-2xl">🌱</div>
-                    <h4 class="text-xl font-bold mb-4">個性を大切に</h4>
-                    <p class="text-gray-600 leading-relaxed">画一的な指導ではなく、お子様一人ひとりの興味や得意なことに寄り添った支援を行います。</p>
+
+            <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+                <!-- エアコン工事 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all card-hover border border-slate-100">
+                    <img src="https://tanoshige.v2001.coreserver.jp/ai-web-studio/backups/project_ai-web-studio-backups/assets/ai_img_20260304_162130_7966.png" data-ai-prompt="一般家庭の壁に設置された最新のエアコン。配管がカバーで綺麗に整えられている様子。明るく清潔感のあるリビングの壁面。" class="w-full h-48 object-cover" data-ai-last-sync="一般家庭の壁に設置された最新のエアコン。配管がカバーで綺麗に整えられている様子。明るく清潔感のあるリビングの壁面。, featuring Japanese people and models, natural Japanese physical features and hair">
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-blue-500 mb-1 block uppercase">Air Conditioning</span>
+                        <h3 class="text-xl font-bold mb-3 font-rounded">エアコン工事</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">新しく買ったエアコンの取り付けや、お引越し時の移設、古い機種の取り外しまでお任せください。</p>
+                        <ul class="text-xs text-slate-400 space-y-1">
+                            <li>・新規取り付け</li>
+                            <li>・移設・撤去工事</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="p-8 rounded-3xl bg-pastel-green text-center">
-                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm text-2xl">🤝</div>
-                    <h4 class="text-xl font-bold mb-4">社会とのつながり</h4>
-                    <p class="text-gray-600 leading-relaxed">地域の方々との交流や、集団活動を通じて、社会性を育む機会を大切にします。</p>
+
+                <!-- エアコンクリーニング -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all card-hover border border-slate-100">
+                    <img src="https://tanoshige.v2001.coreserver.jp/ai-web-studio/backups/project_ai-web-studio-backups/assets/ai_img_20260304_162143_f58a.png" data-ai-prompt="エアコンのフィルターを外し、内部を専用の洗浄液でクリーニングしている様子。プロの道具が揃っており、清潔感がある作業風景。" class="w-full h-48 object-cover" data-ai-last-sync="エアコンのフィルターを外し、内部を専用の洗浄液でクリーニングしている様子。プロの道具が揃っており、清潔感がある作業風景。, featuring Japanese people and models, natural Japanese physical features and hair">
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-green-500 mb-1 block uppercase">Cleaning</span>
+                        <h3 class="text-xl font-bold mb-3 font-rounded">エアコンクリーニング</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">効きが悪くなった、ニオイが気になる…そんな時はプロの洗浄！電気代の節約にも繋がります。</p>
+                        <ul class="text-xs text-slate-400 space-y-1">
+                            <li>・高圧洗浄で徹底除菌</li>
+                            <li>・カビ・ホコリ対策</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="p-8 rounded-3xl bg-pastel-yellow text-center">
-                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm text-2xl">🏠</div>
-                    <h4 class="text-xl font-bold mb-4">安心できる居場所</h4>
-                    <p class="text-gray-600 leading-relaxed">ご家庭、学校に次ぐ「第3の居場所」として、リラックスして過ごせる環境を整えています。</p>
+
+                <!-- 各種電気工事 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all card-hover border border-slate-100">
+                    <img src="https://tanoshige.v2001.coreserver.jp/ai-web-studio/backups/project_ai-web-studio-backups/assets/ai_img_20260304_162156_6420.png" data-ai-prompt="部屋の壁にあるコンセントを新しく増設したり、最新のLED照明を天井に取り付けている様子。丁寧な作業が伝わるアップの写真。" class="w-full h-48 object-cover" data-ai-last-sync="部屋の壁にあるコンセントを新しく増設したり、最新のLED照明を天井に取り付けている様子。丁寧な作業が伝わるアップの写真。, featuring Japanese people and models, natural Japanese physical features and hair">
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-orange-500 mb-1 block uppercase">Electric Work</span>
+                        <h3 class="text-xl font-bold mb-3 font-rounded">各種電気工事</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">「ここにコンセントがあれば…」「ブレーカーがよく落ちる」など、日常の不便を解消します。</p>
+                        <ul class="text-xs text-slate-400 space-y-1">
+                            <li>・コンセント増設・修理</li>
+                            <li>・照明器具の交換</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- アンテナ工事 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all card-hover border border-slate-100">
+                    <img src="https://tanoshige.v2001.coreserver.jp/ai-web-studio/backups/project_ai-web-studio-backups/assets/ai_img_20260304_162207_64e6.png" data-ai-prompt="一軒家の屋根や壁面に設置されたテレビアンテナ。青空の下でしっかりと固定されている様子。" class="w-full h-48 object-cover" data-ai-last-sync="一軒家の屋根や壁面に設置されたテレビアンテナ。青空の下でしっかりと固定されている様子。, featuring Japanese people and models, natural Japanese physical features and hair">
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-red-500 mb-1 block uppercase">Antenna</span>
+                        <h3 class="text-xl font-bold mb-3 font-rounded">アンテナ工事</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">地デジアンテナの設置や、BS/CSの視聴、映りが悪い時の修理まで、迅速に対応いたします。</p>
+                    </div>
+                </div>
+
+                <!-- 家電設置工事 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all card-hover border border-slate-100">
+                    <img src="https://tanoshige.v2001.coreserver.jp/ai-web-studio/backups/project_ai-web-studio-backups/assets/ai_img_20260304_162219_ae5f.png" data-ai-prompt="大きなドラム式洗濯機や冷蔵庫を丁寧にキッチンや洗面所に設置しているシーン。床を保護しながら作業している安心感。" class="w-full h-48 object-cover" data-ai-last-sync="大きなドラム式洗濯機や冷蔵庫を丁寧にキッチンや洗面所に設置しているシーン。床を保護しながら作業している安心感。, featuring Japanese people and models, natural Japanese physical features and hair">
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-purple-500 mb-1 block uppercase">Home Appliances</span>
+                        <h3 class="text-xl font-bold mb-3 font-rounded">家電設置工事</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">大型家電の搬入・設置・初期設定まで。ネットで買った家電の設置だけのご依頼も大歓迎です。</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Service Section -->
-    <section id="service" class="py-20 bg-gray-50">
+    <!-- Company Profile Section -->
+    <section id="company" class="py-20 bg-white scroll-mt">
         <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row gap-12 items-center">
+            <div class="bg-blue-50 rounded-[2rem] p-8 md:p-12 shadow-inner border-2 border-white flex flex-col md:flex-row gap-12 items-center">
                 <div class="md:w-1/2">
-                    <img src="https://tanoshige.v2001.coreserver.jp/ai-web-studio/backups/project_ai-web-studio-backups/assets/ai_img_20260301_125116_326f.png" data-ai-prompt="子供が手を使って絵を描いたり、粘土をこねたりしている手元のアップ。創造性と成長を感じさせる明るい写真。" class="rounded-3xl shadow-xl" data-ai-last-sync="子供が手を使って絵を描いたり、粘土をこねたりしている手元のアップ。創造性と成長を感じさせる明るい写真。, featuring Japanese people and models, natural Japanese physical features and appearance">
-                </div>
-                <div class="md:w-1/2">
-                    <h3 class="text-3xl font-kiwi font-bold mb-6">充実のサービス内容</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3">
-                            <span class="bg-tsumugi-orange text-white rounded-full w-6 h-6 flex items-center justify-center mt-1 text-sm">✓</span>
-                            <div>
-                                <h5 class="font-bold text-lg">学習支援</h5>
-                                <p class="text-gray-600">宿題のサポートや、個別の学習状況に合わせた課題に取り組みます。</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="bg-tsumugi-orange text-white rounded-full w-6 h-6 flex items-center justify-center mt-1 text-sm">✓</span>
-                            <div>
-                                <h5 class="font-bold text-lg">創作活動</h5>
-                                <p class="text-gray-600">絵画、工作、料理などを通じて、表現する楽しさを学びます。</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="bg-tsumugi-orange text-white rounded-full w-6 h-6 flex items-center justify-center mt-1 text-sm">✓</span>
-                            <div>
-                                <h5 class="font-bold text-lg">送迎サービス</h5>
-                                <p class="text-gray-600">学校から施設、施設からご自宅までの送迎を実施しております。（エリア要相談）</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Schedule Section -->
-    <section id="schedule" class="py-20 bg-white">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <div class="text-center mb-16">
-                <h3 class="text-3xl font-kiwi font-bold mb-4">一日の流れ</h3>
-                <p class="text-gray-500">平日のスケジュール例です</p>
-            </div>
-            <div class="space-y-6">
-                <div class="flex gap-6 items-center">
-                    <div class="w-24 text-tsumugi-orange font-bold text-xl">14:00</div>
-                    <div class="flex-1 bg-pastel-yellow p-4 rounded-2xl shadow-sm border-l-4 border-tsumugi-orange">
-                        <span class="font-bold">学校へお迎え・来所</span>
-                        <p class="text-sm text-gray-600">手洗い・うがいをして健康チェックを行います。</p>
+                    <h2 class="text-3xl font-bold mb-6 font-rounded">エムコンのこと</h2>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        こんにちは！エムコンの宮内です。神戸市西区を拠点に、フットワーク軽く皆様のお困りごとに駆けつけます。「どこに頼めばいいかわからない」ような小さな工事でも、まずはご相談ください。丁寧な説明と確実な作業をお約束します。
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded text-sm font-bold mr-4 min-w-[80px] text-center">代表者</span>
+                            <span class="font-bold text-lg">宮内 祐介 (Yusuke Miyauchi)</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded text-sm font-bold mr-4 min-w-[80px] text-center">所在地</span>
+                            <span>〒651-2111 神戸市西区池上町4丁目6-6-102</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded text-sm font-bold mr-4 min-w-[80px] text-center">TEL</span>
+                            <span class="font-bold text-blue-700 underline">090-7364-4824</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded text-sm font-bold mr-4 min-w-[80px] text-center">FAX</span>
+                            <span>078-945-6023</span>
+                        </div>
                     </div>
                 </div>
-                <div class="flex gap-6 items-center">
-                    <div class="w-24 text-tsumugi-orange font-bold text-xl">15:00</div>
-                    <div class="flex-1 bg-pastel-yellow p-4 rounded-2xl shadow-sm border-l-4 border-tsumugi-orange">
-                        <span class="font-bold">宿題・個別課題</span>
-                        <p class="text-sm text-gray-600">集中できる環境でそれぞれの課題に取り組みます。</p>
-                    </div>
-                </div>
-                <div class="flex gap-6 items-center">
-                    <div class="w-24 text-tsumugi-orange font-bold text-xl">16:00</div>
-                    <div class="flex-1 bg-pastel-yellow p-4 rounded-2xl shadow-sm border-l-4 border-tsumugi-orange">
-                        <span class="font-bold">おやつ・休憩</span>
-                        <p class="text-sm text-gray-600">みんなで楽しくおやつタイム。</p>
-                    </div>
-                </div>
-                <div class="flex gap-6 items-center">
-                    <div class="w-24 text-tsumugi-orange font-bold text-xl">16:30</div>
-                    <div class="flex-1 bg-pastel-yellow p-4 rounded-2xl shadow-sm border-l-4 border-tsumugi-orange">
-                        <span class="font-bold">集団レクリエーション</span>
-                        <p class="text-sm text-gray-600">外遊びや創作活動、ゲームなどを行います。</p>
-                    </div>
-                </div>
-                <div class="flex gap-6 items-center">
-                    <div class="w-24 text-tsumugi-orange font-bold text-xl">17:30</div>
-                    <div class="flex-1 bg-pastel-yellow p-4 rounded-2xl shadow-sm border-l-4 border-tsumugi-orange">
-                        <span class="font-bold">お掃除・帰りの会・送迎開始</span>
-                        <p class="text-sm text-gray-600">今日一日の振り返りをして、安全にご自宅まで送り届けます。</p>
+                <div class="md:w-1/2 w-full">
+                    <div class="bg-white p-4 rounded-2xl shadow-lg rotate-2">
+                        <img src="https://tanoshige.v2001.coreserver.jp/ai-web-studio/backups/project_ai-web-studio-backups/assets/ai_img_20260304_162231_6162.png" data-ai-prompt="神戸市西区周辺の街並みの写真。親しみやすく明るい昼間の風景。地域に密着していることをイメージさせる。" class="w-full h-64 object-cover rounded-xl mb-4" data-ai-last-sync="神戸市西区周辺の街並みの写真。親しみやすく明るい昼間の風景。地域に密着していることをイメージさせる。, featuring Japanese people and models, natural Japanese physical features and hair">
+                        <p class="text-center font-bold text-blue-600">神戸市を中心に兵庫県内どこでも伺います！</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Info Section -->
-    <section id="access" class="py-20 bg-pastel-green">
-        <div class="container mx-auto px-4">
-            <div class="bg-white rounded-[40px] shadow-xl overflow-hidden flex flex-col md:flex-row">
-                <div class="md:w-1/2 p-10 md:p-16">
-                    <h3 class="text-3xl font-kiwi font-bold mb-8">施設情報</h3>
-                    <dl class="space-y-6">
-                        <div>
-                            <dt class="text-tsumugi-orange font-bold text-sm uppercase tracking-wider">施設名</dt>
-                            <dd class="text-lg font-medium">放課後等デイサービス TSUMUGI</dd>
-                        </div>
-                        <div>
-                            <dt class="text-tsumugi-orange font-bold text-sm uppercase tracking-wider">運営会社</dt>
-                            <dd class="text-lg font-medium">株式会社 TSUMUGI</dd>
-                        </div>
-                        <div>
-                            <dt class="text-tsumugi-orange font-bold text-sm uppercase tracking-wider">所在地</dt>
-                            <dd class="text-lg font-medium leading-relaxed">〒651-2111<br>兵庫県神戸市西区伊川谷町</dd>
-                        </div>
-                        <div>
-                            <dt class="text-tsumugi-orange font-bold text-sm uppercase tracking-wider">電話番号</dt>
-                            <dd class="text-2xl font-bold">078-000-0000</dd>
-                            <p class="text-sm text-gray-500">受付時間：平日 10:00〜18:00</p>
-                        </div>
-                    </dl>
-                </div>
-                <div class="md:w-1/2 min-h-[400px] bg-gray-200 relative">
-                    <img src="https://tanoshige.v2001.coreserver.jp/ai-web-studio/backups/project_ai-web-studio-backups/assets/ai_img_20260301_125129_2f38.png" data-ai-prompt="神戸市西区伊川谷周辺の地図、または施設の可愛らしい外観写真。入り口に「TSUMUGI」の看板がある。" class="w-full h-full object-cover" data-ai-last-sync="神戸市西区伊川谷周辺の地図、または施設の可愛らしい外観写真。入り口に「TSUMUGI」の看板がある。, featuring Japanese people and models, natural Japanese physical features and appearance">
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Floating Contact (Mobile Only) -->
+    <div class="fixed bottom-4 right-4 z-40 lg:hidden">
+        <a href="tel:090-7364-4824" class="bg-orange-500 text-white p-4 rounded-full shadow-2xl flex items-center justify-center animate-bounce">
+            <span class="text-2xl">📞</span>
+        </a>
+    </div>
 
-    <!-- Contact CTA -->
-    <section id="contact" class="py-20 bg-tsumugi-orange text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h3 class="text-3xl md:text-4xl font-kiwi font-bold mb-6">見学・相談は随時受付中です</h3>
-            <p class="text-lg mb-10 opacity-90">お子様に合ったサポートを一緒に考えていきましょう。<br class="hidden md:block">まずはお気軽にお問い合わせ、または見学にお越しください。</p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="tel:0780000000" class="bg-white text-tsumugi-orange px-10 py-5 rounded-full font-bold text-xl shadow-xl flex items-center justify-center gap-2">
-                    <span class="text-2xl">📞</span> 078-000-0000
-                </a>
-                <a href="#" class="bg-orange-800 text-white px-10 py-5 rounded-full font-bold text-xl shadow-xl flex items-center justify-center gap-2">
-                    <span class="text-2xl">✉️</span> メールでお問い合わせ
-                </a>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-800 text-white scroll-mt overflow-hidden relative">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 font-rounded">お気軽にご相談ください</h2>
+                <p class="text-slate-400">「こんなこと頼める？」といったご質問だけでも大歓迎です！</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white text-slate-800 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-blue-600 text-white p-10 flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold mb-6 font-rounded">お電話でのご相談</h3>
+                        <p class="text-blue-100 mb-6">お急ぎの方、直接話して相談したい方はこちら。宮内が直接お受けします。</p>
+                        <a href="tel:090-7364-4824" class="text-3xl md:text-4xl font-bold block mb-4 hover:text-yellow-300 transition">090-7364-4824</a>
+                        <p class="text-sm text-blue-200">受付時間：9:00〜19:00（不定休）</p>
+                    </div>
+                    <div class="md:w-1/2 p-10">
+                        <h3 class="text-2xl font-bold mb-6 font-rounded text-blue-600">メールでのお問い合わせ</h3>
+                        <p class="text-slate-500 mb-8 text-sm leading-relaxed">確認後、24時間以内に折り返しご連絡いたします。</p>
+                        <a href="mailto:emucon.ys@gmail.com" class="inline-block bg-slate-100 hover:bg-slate-200 text-blue-800 font-bold py-4 px-6 rounded-xl w-full text-center transition break-all">
+                            emucon.ys@gmail.com
+                        </a>
+                        <p class="text-center mt-4 text-xs text-slate-400">※24時間受け付けております</p>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- Decoration -->
+        <div class="absolute top-1/2 left-0 -translate-x-1/2 w-96 h-96 bg-blue-900/30 rounded-full"></div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
+    <footer class="bg-slate-900 text-slate-500 py-12">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center mb-10">
-                <div class="flex items-center gap-3 mb-6 md:mb-0">
-                    <div class="w-8 h-8 bg-tsumugi-orange rounded-full flex items-center justify-center text-white font-bold text-sm">紬</div>
-                    <span class="text-2xl font-bold tracking-tighter">TSUMUGI</span>
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <div class="text-2xl font-bold text-white font-rounded mb-1">エムコン</div>
+                    <div class="text-xs uppercase tracking-widest">m2-construction</div>
                 </div>
-                <div class="flex gap-8 text-sm text-gray-400">
-                    <a href="#" class="hover:text-white transition">プライバシーポリシー</a>
-                    <a href="#" class="hover:text-white transition">運営会社</a>
+                <div class="flex flex-wrap justify-center gap-6 text-sm">
+                    <a href="#services" class="hover:text-white transition">業務内容</a>
+                    <a href="#company" class="hover:text-white transition">会社概要</a>
+                    <a href="#contact" class="hover:text-white transition">お問い合わせ</a>
                 </div>
             </div>
-            <div class="border-t border-gray-700 pt-8 text-center text-sm text-gray-500">
-                © 2024 株式会社 TSUMUGI. All rights reserved.
+            <div class="border-t border-slate-800 pt-8 text-center text-[10px]">
+                <p class="mb-2">〒651-2111 神戸市西区池上町4丁目6-6-102</p>
+                <p>© 2023 m2-construction / エムコン. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                e.preventDefault();
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 
 </body></html>
